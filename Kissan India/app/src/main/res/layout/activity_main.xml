@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="farmer.farmer.MainActivity"
+    android:fillViewport="false"
+    android:background="@drawable/background"
+    android:measureAllChildren="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/fab_margin"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingTop="@dimen/fab_margin"
+        android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which language would you like to read"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:id="@+id/btn_english"
+        android:fontFamily="serif"
+        android:textColor="#f5f5f5"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:id="@+id/btn_hindi"
+        android:fontFamily="serif"
+        android:textColor="#f5f5f5"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/btn_english"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

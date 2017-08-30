@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="h.materialdesignlogin.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="2"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_share_feedback"
+        android:orderInCategory="1"
+        android:title="Share feedback"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="3"
+        android:title="Share this App"
+        app:showAsAction="never" />
+</menu>

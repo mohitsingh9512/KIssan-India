@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RelativeLayout1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RelativeLayout2"
+        android:paddingRight="@dimen/fab_margin"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingTop="@dimen/fab_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview_app_logo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_image_in_signup"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/design_username_in_log_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_app_logo"
+            android:textColorHint="@color/textColorHint"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imageview_app_logo"
+                android:fontFamily="serif"
+                android:autoText="true"
+                android:id="@+id/ed_username_log_in"
+                android:textColorHint="@color/textColorHint"
+                android:hint="\tUsername"
+                android:drawableLeft="@drawable/sign_up_log_in_username"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/design_password_in_log_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/textColorHint"
+            android:layout_below="@+id/design_username_in_log_in">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="serif"
+                android:autoText="true"
+                android:inputType="textPassword"
+                android:id="@+id/ed_password_log_in"
+                android:hint="\tPassword"
+                android:textColorHint="@color/textColorHint"
+                android:drawableLeft="@drawable/password_of_sign_up"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/Linear_Layout1"
+            android:layout_below="@+id/design_password_in_log_in">
+
+            <CheckBox
+                android:id="@+id/checkbox_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/remember_me_in_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password_in_login"
+            android:layout_weight="1"
+            android:id="@+id/tv_forgot_password"
+            android:textSize="14sp"
+            android:gravity="end" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Log In"
+            android:textSize="19sp"
+            android:textColor="#f5f5f5"
+            android:id="@+id/btnlog_in"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Linear_Layout1"
+            android:background="@drawable/rounded_button" />
+    </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:id="@+id/divide_line"
+            android:layout_below="@+id/RelativeLayout2"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No account yet? Create one"
+            android:textSize="15sp"
+            android:textColor="@color/bg_screen2"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tvcreate_one"
+            android:layout_below="@+id/divide_line"/>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

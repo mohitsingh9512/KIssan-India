@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/background"
+    tools:context=".Intro_Slider">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.3"
+        android:weightSum="1">
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnPrevious"
+            android:textSize="25dp"
+            android:textColor="#757776"
+            android:text="@string/previous"
+            android:layout_weight="0.03"/>
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"
+            android:id="@+id/viewFlipper">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgweather"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weatherforecast"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgnews"
+                android:scaleType="centerCrop"
+                android:src="@drawable/news"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgmandirate"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mandiprice" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgaskanexpert"
+                android:scaleType="centerCrop"
+                android:src="@drawable/askanexpertjpg"
+                android:layout_weight="0.3" />
+
+        </ViewFlipper>
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnNext"
+            android:textSize="25dp"
+            android:layout_weight="0.03"
+            android:textColor="#757776"
+            android:text="@string/next2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Market Price"
+            android:id="@+id/btnmarket_price"
+            android:background="#F7C59E"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Crops"
+            android:id="@+id/btnmy_crops_in_intro_slider"
+            android:layout_weight="0.5"
+            android:background="#8ECAF9"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_weight="0.35"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Fertilizer"
+            android:id="@+id/btnfertilizer"
+            android:background="#9EF7C4"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Follow Us On"
+            android:id="@+id/btnFollowUsOn"
+            android:layout_weight="0.5"
+            android:background="#F7F19E"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

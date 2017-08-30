@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hello, Ankit"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/textview_greeting"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:id="@+id/divide_line1"
+            android:layout_below="@+id/textview_greeting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequently asked questions"
+                android:id="@+id/FAQs"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/divide_line1"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/buttonUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click To Enter Forum"
+                android:layout_below="@+id/FAQs" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to home"
+                android:background="@drawable/rounded_button"
+                android:textAllCaps="false"
+                android:id="@+id/go_to_main_screen"
+                android:layout_below="@+id/buttonUrl" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
